@@ -1,0 +1,1148 @@
+@import "/styles/reset.css";
+@import "/styles/font.css";
+@import "/styles/grid.css";
+
+
+:root{
+    --body-color:#F7F7F8;
+    --first-color:#532E1C;
+    --second-color:#C5A880;
+    --third-color:#4D828C;
+    --section-color:#0F0F0F;
+    --font-color:#2F3645;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: "Vazir Bold";
+    font-size: 1.6rem;
+    line-height: 1.5;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    background-color: var(--body-color);
+    color: var(--font-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+ul{
+    list-style-type: none;
+  
+}
+
+/* 
+
+====Components====
+
+*/
+
+.section-title__wrapper{
+    margin-top: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-title{
+    font-size: 3.5rem;
+    margin-left: 0.4rem;
+}
+
+.section-title--color{
+    color: var(--body-color);
+}
+
+.section-title__wrapper--margin{
+    margin-top: -16rem;
+}
+
+
+
+/* 
+
+====Container====
+
+*/
+
+.container{
+    max-width: 1460px;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+
+/* 
+
+===header===
+
+*/
+
+.header{
+
+}
+
+
+/* 
+
+===header top===
+
+*/
+
+.header-top{
+    margin-top: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.header-icon__responsive{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background-color: #EFEFF1;
+    padding: 1rem;
+    border-radius: 5rem;
+    
+}
+
+.nav-logo{
+
+}
+
+.nav-logo__image{
+    width: 60px;
+    height: 60px;
+    border-bottom: 3px solid var(--second-color);
+    border-top: 3px solid var(--second-color);
+    border-radius: 100%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    padding-right: 0;
+    flex-wrap: wrap;
+}
+
+.menu__item{
+    margin-right: 3rem;
+}
+
+.menu-link__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.menu__link{
+    font-size: 1.9rem;
+    margin-top: 0.5rem;
+}
+
+.menu__link--active{
+    color:var(--second-color);
+}
+
+/* 
+
+===search box===
+
+*/
+
+.search-box__wrapper{
+    width: 30rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-box__text{
+
+}
+
+.person__wrapper ,
+.shop__wrapper{
+    width: 37px;
+    height: 37px;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    flex-shrink: 0;
+}
+
+.search-box__wrapper svg{
+    outline: none;
+}
+
+
+/* 
+
+===main===
+
+*/
+
+.main{
+    
+}
+
+/* 
+
+===information====
+
+*/
+
+.information{
+    margin-top: -2rem;
+   position: relative;
+}
+
+.row--align{
+    align-items: center;
+}
+
+.information__title{
+    font-size: 3.5rem;
+    font-family: "Vazir Thin";
+    color: var(--first-color);
+}
+
+.information__text{
+    font-size: 5rem;
+    font-family: "Vazir Medium";
+}
+
+.information__caption{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    width: 68rem;
+    text-align: justify;
+    color: #000000c7;
+    font-family: "Vazir Thin";
+}
+
+.information__button{
+    display: flex;
+    align-items: center;
+}
+
+.information__btn{
+    display: block;
+    margin-right: 1rem;
+    background: var(--third-color);
+    color: white;
+    padding: 1rem;
+    width: 16rem;
+    text-align: center;
+    border-radius: 2rem;
+    font-family: "Vazir Medium";
+}
+
+.information__btn--color{
+    background-color: white;
+    color: var(--third-color);
+    border: 1px solid var(--third-color);
+}
+
+.information__image{
+    width: 660px;
+}
+
+.row-pics{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: block;
+    margin-top: 2.5rem;
+    transition: all 200ms ease-in;
+    border: 3px solid var(--second-color);
+}
+
+
+.row-pics:hover{
+    transform: scale(1.2);
+    
+}
+
+.arrow{
+    width: 156px;
+    position: absolute;
+    top: 36rem;
+    left: 71rem;
+}
+
+/* 
+
+===introduction===
+
+*/
+
+.introduction{
+    
+}
+
+.introduction-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--second-color);
+    padding: 2.5rem;
+    border-radius: 2rem;
+}
+
+.introduction__pack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction__image{
+    width: 60px;
+}
+
+.introduction__title{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.3rem;
+    font-family: 'Vazir Thin';
+}
+
+.introduction__text{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0000009e;
+    width: 20rem;
+    line-height: 1.8;
+}
+
+
+/* 
+
+===Product Off===
+
+*/
+
+.row--justify{
+    justify-content: center;
+}
+
+.product-off{
+    margin-top: 10rem;
+}
+
+.product-off__pack{
+    margin-top: 5rem;
+    background: #EFEFF1;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    position: relative;
+    height: 335px;
+}
+
+
+
+.product-off__percent{
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: var(--third-color);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-off__percent span{
+    color: var(--body-color);
+    font-size: 1.3rem;
+}
+
+.product-off__image{
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.product-off__title{
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #00000087;
+    margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
+    font-family: "Vazir Medium";
+}
+
+.off{
+    font-size: 1.2rem;
+    color: var(--first-color);  
+    position: relative;  
+}
+
+.off:after{
+    transform: rotate(171deg);
+    content: " ";
+    position: absolute;
+    top: 0;
+    background-color: var(--third-color);
+    width: 7rem;
+    height: 0.2rem;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    border-radius: 5rem;
+}
+
+.product-off__price{
+
+}
+
+.product-off__number{
+
+}
+
+.product-off__shop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-off__cart{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: var(--third-color);
+    padding: 0.7rem;
+    border-radius: 5rem;
+    gap: 0.5rem;
+}
+
+.shopping-cart{
+    color: var(--body-color);
+    font-size: 1.3rem;
+}
+
+.product-off__wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+.product-off__time{
+    width: 57px;
+    height: 57px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--body-color);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.time{
+    color: var(--third-color);
+}
+
+.product-off__time-caption{
+    width: 23rem;
+    text-align: justify;
+    font-size: 1.4rem;
+    line-height: 1.9;
+    word-spacing: 1px;
+    font-family: "Vazir Thin";
+}
+
+.product-off__arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* 
+
+===about us===
+
+*/
+
+.about-us{
+    background-color: #1B1B1D;
+    margin-top: -9rem; 
+    min-height: 100rem;
+}
+
+
+
+.about-us__wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-us__right{
+
+}
+
+.about-us__title-wrapper{
+    margin-top: 17rem;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.about-us__title{
+    color: var(--body-color);
+    font-size: 2.3rem;
+}
+
+.about-us__text{
+    width: 66rem;
+    margin-top: 2rem;
+    text-align: right;
+    line-height: 1.8;
+    color: #f7f7f85e;
+    font-size: 1.5rem;
+}
+
+/* 
+
+===about us button===
+
+*/
+
+.about-us__btn-wrapper{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-us__button{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--body-color);
+    padding: 1rem;
+    border-radius: 1.5rem;
+    text-align: center;
+    width: 14rem;
+    height: 4.5rem;
+}
+
+.about-us__button--color{
+    background-color: var(--third-color);
+}
+
+.about-us__btn{
+
+}
+
+.about-us__btn--color{
+    color: var(--body-color);
+}
+
+/* 
+
+===about us group===
+
+*/
+
+.about-us__group{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us__group-pack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 3rem;
+    transition: all 250ms ease;
+}
+
+.about-us__group-pack:hover{
+    transform: scale(1.2);
+}
+
+.about-us__group-title{
+    color: var(--body-color);
+}
+
+.about-us__left{
+
+}
+
+
+/* ======= */
+
+.about-us__image{
+    margin-top: 4rem;
+    object-fit: contain;
+    border-radius: 10rem;
+   filter: opacity(0.4);
+   width: 550px;
+   box-shadow: 1px 5px 1px 1px #00000030;
+   border-radius: 100%;
+}
+
+
+/* 
+
+===new product===
+
+*/
+
+.new-product{
+    
+}
+
+.new-product__pack{
+    background: #EFEFF1;
+    padding: 1.5rem;
+    border-radius: 2rem;
+    position: relative;
+    height: 335px;
+    margin-top: 3rem;
+}
+
+.new-product__image{
+    display: block;
+    margin: auto;
+}
+
+.new-product__title{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #00000087;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.new-product__off{
+    font-size: 1.2rem;
+    color: var(--first-color);
+    position: relative;
+}
+
+.new-product__off::after{
+    position: absolute;
+    content: " ";
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    margin: auto;
+    width: 7rem;
+    height: 0.2rem;
+    background-color: var(--third-color);
+    border-radius: 5rem;
+    transform: rotate(171deg);
+}
+
+.new-product__price-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 65px;
+}
+
+.new-product__price-wrapper--height{
+    min-height: 112px;
+}
+
+.new-product__price{
+
+}
+
+.new-product__shop-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--third-color);
+    padding: 0.7rem;
+    border-radius: 5rem;
+}
+
+.new-product__cart{
+    color: var(--body-color);
+    font-size: 1.3rem;
+}
+
+/* 
+
+===see all===
+
+*/
+
+.see-all{
+    width: max-content;
+    margin: 2rem auto;
+}
+
+.see-all__text{
+    color: var(--third-color);
+    font-size: 1.5rem;
+    background-color: #EFEFF1;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1.5rem;
+    transition: all 200ms ease;
+    cursor: pointer;
+}
+
+.see-all__text:hover{
+    color: var(--body-color);
+    background-color: var(--third-color);
+}
+
+/* 
+
+===custom-combination===
+
+*/
+
+.custom-combination{
+    margin-top: 10rem;
+}
+
+.custom-combination__wrapper{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-combination__pack{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.custom-combination__pack--margin{
+    margin-top: 8rem;
+}
+
+.custom-combination__image{
+    width: 75px;
+    position: relative;
+}
+
+.custom-combination__text{
+    margin-right: 2rem;
+    position: relative;
+    font-family: "Vazir Thin";
+    font-size: 2rem;
+}
+
+.custom-combination__text::before{
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    border-radius: 100%;
+    background-color: #fff;
+    right: -122px;
+    top: -35px;
+    z-index: -1;
+}
+
+.custom-combination__arrow{
+    position: absolute;
+    width: 150px;
+    right: 31rem;
+    top: -2rem;
+    transform: rotate(350deg);
+}
+
+.arrow-down{
+    display: none;
+}
+
+.custom-combination__pack--fix{
+    margin-right: -4rem;
+}
+
+.custom-combination__arrow--style{
+    right: 38rem;
+    top: 2rem;
+    transform:rotate(18deg);
+    width: 123px;
+}
+
+.custom-combination__button{
+    margin: 5rem auto;
+    width: max-content;
+    
+}
+
+.custom-combination__btn{
+    color: var(--body-color);
+    background: var(--first-color);
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1.5rem;
+    transition: all 200ms ease;
+}
+
+.custom-combination__btn:hover{
+    background-color:#fff;
+    color:var(--first-color);
+}
+
+
+/* 
+
+===blog===
+
+*/
+
+.blog{
+    margin-top: 10rem;
+
+}
+
+.blog-pack{
+    margin-top: 8rem;
+    background-color: var(--second-color);
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.blog__img{
+    display: block;
+    margin: 1rem auto;
+    border-radius: 1.5rem;
+    margin-top: -2.2rem;
+    width: 250px;
+}
+
+.blog__title{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.blog__text{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    font-size: 1.3rem;
+    color: #2f364596;
+    max-height: 3.6em;
+    line-height: 1.9em;
+}
+
+.blog-calender{
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-calender__number{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.blog-calender__text{
+    font-size: 1.4rem;
+    color: var(--first-color);
+}
+
+.blog-button{
+    color:var(--body-color);
+    background-color: var(--third-color);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+}
+
+.blog-button:hover{
+    background-color: var(--body-color);
+    color: var(--third-color);
+    transition: all 200ms ease;
+}
+
+/* 
+
+===see blog===
+
+*/
+
+.see-blog{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.see-blog__text{
+    font-size: 1.2rem;
+    background-color: var(--first-color);
+    color: #f7f7f8c9;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    transition: all 200ms ease;
+    
+}
+
+.see-blog__text:hover{
+    background-color: #fff;
+    color: var(--second-color);
+}
+
+
+/* 
+
+===footer===
+
+*/
+
+.footer{
+    background-color:#1B1B1D;
+    margin-top: 10rem;
+    margin-bottom: 0;
+    padding: 4rem 0;
+    position: relative;
+    overflow: hidden;
+}
+.footer-background{
+    position: absolute;
+    opacity: 0.1;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+}
+/* 
+
+===footer col-5===
+
+*/
+
+.footer-title__wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    
+}
+
+.footer__title{
+    color: #f7f7f8b8;
+}
+
+.nav-logo__image--footer{
+    width: 50px;
+    height: 50px;
+}
+
+.footer__text{
+    line-height: 1.9;
+    width: 50rem;
+    margin-top: 0.5rem;
+    color: #f7f7f8b8;
+    font-size: 1.5rem;
+    font-family: 'Vazir Thin';
+}
+
+/* 
+
+===footer col-7===
+
+*/
+
+.col--background{
+    background-color:#EFEFF1;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    min-height: 25rem;
+    height: 100%;
+    position: relative;
+}
+
+.newsletter__title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter__text{
+    font-family: 'Vazir Thin';
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter-email__wrapper{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.newsletter-email__wrapper input{
+    outline: none;
+    border: none;
+    padding: 1.3rem;
+    width: 100%;
+    height: 5.2rem;
+    border-radius: 2rem;
+    margin-top: 4rem;
+}
+
+.newsletter-email__wrapper input::placeholder{
+    font-family: "Vazir Thin";
+    font-size: 1.7rem;
+    
+}
+
+.newsletter-email__wrapper button{
+    outline: none;
+    border: none;
+    width: 9rem;
+    height: 5rem;
+    background: var(--third-color);
+    border-radius: 2rem;
+    font-family: 'Vazir Thin';
+    color: var(--body-color);
+    font-size: 1.7rem;
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+/* 
+
+===footer col-8===
+
+*/
+
+.col--margin{
+    margin-top: 4rem;
+}
+
+.info__title-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.info__title{
+    margin-right: -19px;
+    color: var(--body-color);
+    font-family: "Vazir Thin";
+    font-size: 1.9rem;
+}
+
+.info__list-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-list__pack{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-list{
+
+}
+
+.info__item{
+    margin-bottom: 2rem;
+    
+}
+
+.info__item--svg {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.info__link{
+    color: var(--body-color);
+    font-family: "Vazir Thin";
+    
+}
+
+/* 
+
+===footer col-4===
+
+*/
+
+.address-image{
+    display: block;
+    margin: 0 auto;
+}
+
+.address-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.address-title{
+    color: var(--body-color);
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 0.8rem;
+}
+
+.address-text{
+    color: #f7f7f8bf;
+    font-family: 'Vazir Thin';
+    font-size: 1.4rem;
+    width: 28rem;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
